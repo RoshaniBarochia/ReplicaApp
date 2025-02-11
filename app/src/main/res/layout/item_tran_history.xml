@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <data>
+
+        </data>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@android:color/holo_red_dark"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_5ssp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/view1"
+                    android:id="@+id/tvTitle"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/_200_00_zar"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                    app:layout_constraintStart_toEndOf="@id/view1"
+                    android:id="@+id/tvDesc"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_27640101010"
+                    android:textSize="@dimen/_8ssp"
+                    android:textColor="@color/gray_disable_text" />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@id/tvDesc"
+                    app:layout_constraintBottom_toBottomOf="@id/tvDesc"
+                    app:layout_constraintEnd_toStartOf="@id/imgArrow"
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_21_01_2020"
+                    android:textSize="@dimen/_8ssp"
+                    android:layout_marginEnd="@dimen/_15ssp"
+                    android:textColor="@color/gray_disable_text" />
+
+
+                <ImageView
+                    android:contentDescription="@string/temp_null"
+                    android:id="@+id/imgArrow"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/ic_arrow_down"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

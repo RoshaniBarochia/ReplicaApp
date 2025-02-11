@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E7EBE8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mainLayout"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="match_parent">
+
+    <!-- Toggle Buttons -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/layout"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/btnPrepaid"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10ssp"
+            android:backgroundTint="@color/purple_500"
+            android:text="@string/prepaid"
+            android:textColor="@color/black"
+             />
+
+        <Button
+            android:id="@+id/btnPostpaid"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10ssp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/postpaid"
+            android:textColor="@color/white"
+             />
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/layout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/selectCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_mobile_number"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/selectCnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/imgFlag"
+        android:contentDescription="@string/temp_null"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/scan_qr"
+        android:layout_marginEnd="@dimen/_10ssp" />
+
+
+    <EditText
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@id/selectCnt"
+        app:layout_constraintEnd_toStartOf="@id/imgFlag"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="number"
+        android:id="@+id/tvGetCountry"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:fontFamily="@font/cera_pro_medium"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_10ssp"
+        android:drawablePadding="@dimen/_10ssp"
+        android:background="@drawable/selector_button_secondary"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/topUpAmt"
+        app:layout_constraintTop_toBottomOf="@id/tvGetCountry"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/topup_amount"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"
+        />
+
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/topUpAmt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="number"
+        android:id="@+id/tvTopUpAmt"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:fontFamily="@font/cera_pro_medium"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_10ssp"
+        android:drawablePadding="@dimen/_10ssp"
+        android:background="@drawable/selector_button_secondary"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textColor="@color/black"/>
+
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/example_gray_on_green"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:elevation="6dp"
+        app:area_margin="4dp"
+        app:animation_duration="250"
+        app:outer_color="@color/black_lite"
+        app:inner_color="@color/purple_500"
+        app:border_radius="@dimen/_30sdp"
+        app:text="SLIDE TO TOPUP"
+        app:text_color="@color/white"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@id/tvTopUpAmt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:text_size="12sp"
+        app:slider_height="80dp"
+        app:slider_locked="false"
+        app:bounce_on_start="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/example_gray_on_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

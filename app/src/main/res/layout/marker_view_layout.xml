@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_260sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/marker_bg"
+    android:padding="8dp"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text= "@string/january_16_2022"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_8sdp"/>
+
+    <TextView
+        android:id="@+id/txtValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textStyle="bold"
+        android:textSize="@dimen/_10ssp"
+        android:text="@string/details" />
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_8ssp"
+        android:text="@string/transaction" />
+</LinearLayout>

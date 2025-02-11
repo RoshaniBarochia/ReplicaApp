@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:id="@+id/settingToolbar"
+        android:gravity="center_vertical"
+        android:background="@color/purple_500"
+        android:layout_height="@dimen/_40sdp">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/imgImage"
+            android:src="@drawable/ic_arrow_back_24"
+            app:tint="@color/black"
+            android:padding="@dimen/_5sdp"
+            android:contentDescription="@string/temp_null"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_lite"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/cera_pro_medium"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/my_hierarchy"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+             />
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:contentDescription="@string/temp_null"
+            android:src="@drawable/ic_search_tran"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingToolbar"
+        android:background="#E7EBE8">
+
+    <TextView
+        android:id="@+id/selectCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/distributor_1"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/imgMain"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"
+        />
+
+
+
+    <TextView
+        android:id="@+id/newPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msisdn_27640100000"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvFromDate"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/gray_disable_text" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_balance_19_978_850_00_zar"
+            android:fontFamily="@font/cera_pro_medium"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintTop_toBottomOf="@id/tvFromDate"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textColor="@color/gray_disable_text" />
+
+        <TextView
+            android:id="@+id/tvHierarchy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hierarchy_balance_200_000_00_zar"
+            android:fontFamily="@font/cera_pro_medium"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintTop_toBottomOf="@id/tvFromDate"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textColor="@color/gray_disable_text" />
+
+        <TextView
+            android:id="@+id/tvReseller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reseller_level_sub_distributor"
+            android:fontFamily="@font/cera_pro_medium"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintTop_toBottomOf="@id/tvFromDate"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textColor="@color/gray_disable_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="@string/transfer"
+            android:textStyle="bold"
+            android:background="@drawable/yello_bg_curve"
+            android:paddingTop="@dimen/_14sdp"
+            android:textAllCaps="false"
+            android:paddingBottom="@dimen/_13sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:fontFamily="@font/cera_pro_medium"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvFromDate"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/mainLayout"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

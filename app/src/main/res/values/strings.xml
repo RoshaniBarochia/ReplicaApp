@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">ReplicaMTNApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Distributor 1</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="y_ello">Y\'ello</string>
+    <string name="bottom_text">Reseller App powered by Seamless Distribution System</string>
+    <string name="temp_null">null</string>
+    <string name="logout">Logout</string>
+    <string name="transaction">Home</string>
+    <string name="select_country">Select Country</string>
+    <string name="proceed">Proceed</string>
+    <string name="select_language">Select Language</string>
+    <string name="welcome_back">Welcome back,</string>
+    <string name="sign_in_to_your_evd_reseller_app">Sign in to your EVD seller app</string>
+    <string name="login">Login</string>
+    <string name="msisdn">MSISDN</string>
+    <string name="msisdn1">MSISDN:</string>
+    <string name="pin">Pin</string>
+    <string name="reseller">Reseller ID</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="current_balance1">Current Balance:</string>
+    <string name="dummy_text">₣ £ $ € ₭ Ξ</string>
+    <string name="first_desc">Stay on top of your game with always accessible information to run your business.</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="country_name">India</string>
+    <string name="english">English</string>
+    <string name="use_app">Use App</string>
+    <string name="setting">Setting</string>
+    <string name="help">Help</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="share_app">Share App</string>
+    <string name="version_n">version %s</string>
+    <string name="change_pin">Change Pin</string>
+    <string name="my_printer">My Printer</string>
+    <string name="logging_in">Loading...</string>
+    <string name="current_pin">Current Pin</string>
+    <string name="update">Update</string>
+    <string name="new_pin">New Pin</string>
+    <string name="confirm_new_pin">Confirm New Pin</string>
+    <string name="choose_a_pin_">Choose a PIN as 4 numeric characters</string>
+    <string name="sales_report">Sales Report</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="deposit_history">Deposit History</string>
+    <string name="incentive_history">Incentive History</string>
+    <string name="topup">TOPUP</string>
+    <string name="transfer">TRANSFER</string>
+    <string name="purchase">PURCHASE</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="prepaid">Prepaid</string>
+    <string name="customer_mobile_number">Customer Mobile Number</string>
+    <string name="topup_amount">TopUp Amount</string>
+    <string name="transfer_amount">Transfer Amount</string>
+    <string name="reseller_msisdn_id">Reseller MSISDN/ID</string>
+    <string name="topup_successful">TOPUP SUCCESSFUL</string>
+    <string name="_27640101010">27640101010</string>
+    <string name="_200_00_zar">200.00 ZAR</string>
+    <string name="customer">CUSTOMER</string>
+    <string name="amount">AMOUNT</string>
+    <string name="_2020012204805398910000011">2020012204805398910000011</string>
+    <string name="print_receipt">Print Receipt</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="send_to_print">Send to Print</string>
+    <string name="voucher_amount_s">Voucher Amount : %s</string>
+    <string name="from_dd_mm_yy">From (DD-MM-YY)</string>
+    <string name="to_dd_mm_yy">To (DD-MM-YY)</string>
+    <string name="transaction_status">Transaction Status</string>
+    <string name="all">All</string>
+    <string name="submit">Submit</string>
+    <string name="transaction_history_from_s_to_s">Transaction History from %s to %s</string>
+    <string name="sales_report_from_s_to_s">Sales Report from %s to %s</string>
+    <string name="deposit_history_from_s_to_s">Deposit History from %s to %s</string>
+    <string name="_21_01_2020">21-01-2020</string>
+    <string name="plot_graph_on">Plot Graph On</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="transaction1">Transactions</string>
+    <string name="all_products">All Products</string>
+    <string name="transaction_filter">Transaction Filter</string>
+    <string name="voucher_purchase">Voucher Purchase</string>
+    <string name="prepaid_topup">Prepaid Topup</string>
+    <string name="postpaid_topup">Postpaid Topup</string>
+    <string name="done">DONE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="_17">17</string>
+    <string name="_20012600_00_zar">20012600.00 ZAR</string>
+    <string name="earning">Earnings</string>
+    <string name="_0_00_zar">0.00 ZAR</string>
+    <string name="show_trend_graph">Show Trend Graph</string>
+    <string name="distributor_1">Distributor 1</string>
+    <string name="msisdn_27640100000">MSISDN: 27640100000</string>
+    <string name="_40000000_00_zar">40000000.00 ZAR</string>
+    <string name="date_time_16_01_2020_23_30">Date/Time: 16-01-2020 23:30</string>
+    <string name="reference_2020011715520496001000080">Reference: 2020011715520496001000080</string>
+    <string name="my_hierarchy">My Hierarchy</string>
+    <string name="user_balance_19_978_850_00_zar">User Balance: 19,978,850.00 ZAR</string>
+    <string name="hierarchy_balance_19_612_000_00_zar">Hierarchy Balance: 19,612,000.00 ZAR</string>
+    <string name="hierarchy_balance_200_000_00_zar">Hierarchy Balance: 200,000.00 ZAR</string>
+    <string name="reseller_level_distributor">Reseller Level: Distributor</string>
+    <string name="reseller_level_sub_distributor">Reseller Level: Subdistributor</string>
+    <string name="show_stats">Show Stats</string>
+    <string name="details">Details</string>
+    <string name="january_16_2022">January 16, 2022</string>
+
+
+    <string-array name="country_names">
+        <item>India</item>
+        <item>France</item>
+        <item>United Kingdom</item>
+        <item>Canada</item>
+        <item>India</item>
+        <item>France</item>
+        <item>United Kingdom</item>
+        <item>Canada</item>
+        <item>India</item>
+        <item>France</item>
+        <item>United Kingdom</item>
+        <item>Canada</item>
+    </string-array>
+
+    <string-array name="sales_report">
+    <item>Transaction Amount</item>
+    <item>Transaction Count</item>
+    </string-array>
+</resources>

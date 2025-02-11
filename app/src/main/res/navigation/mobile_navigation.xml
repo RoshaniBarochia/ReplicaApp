@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.replica.mtn.app.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.replica.mtn.app.ui.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/setting_fragment" />
+    <fragment
+        android:id="@+id/password"
+        android:name="com.replica.mtn.app.PasswordFragment"
+        android:label="@string/pin"
+        tools:layout="@layout/password_fragment" />
+
+    <fragment
+        android:id="@+id/sales_report"
+        android:name="com.replica.mtn.app.ui.SalesReportFragment"
+        android:label="@string/sales_report"
+        tools:layout="@layout/sale_report_fragment" >
+        <action
+            android:id="@+id/action_sales_report_to_sales_report_second"
+            app:destination="@id/sales_report_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/incentive_history"
+        android:name="com.replica.mtn.app.ui.IncentiveHistoryFragment"
+        android:label="@string/incentive_history"
+        tools:layout="@layout/incentive_history_fragment" >
+
+        <action
+            android:id="@+id/action_incentive_history_to_incentive_history_second"
+            app:destination="@id/incentive_history_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/incentive_history_second"
+        android:name="com.replica.mtn.app.ui.IncentiveHistorySecondFragment"
+        android:label="@string/incentive_history"
+        tools:layout="@layout/incentive_history_second_fragment" />
+
+
+    <fragment
+        android:id="@+id/my_hierarchy"
+        android:name="com.replica.mtn.app.ui.MyHierarchyFragment"
+        android:label="@string/my_hierarchy"
+        tools:layout="@layout/my_hierarchy_fragment" >
+        <action
+            android:id="@+id/action_my_hierarchy_to_my_hierarchy_second"
+            app:destination="@id/my_hierarchy_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/my_hierarchy_second"
+        android:name="com.replica.mtn.app.ui.MyHierarchySecondFragment"
+        android:label="@string/my_hierarchy"
+        tools:layout="@layout/my_hierarchy_second_fragment" >
+
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="msi"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="balance"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/deposit_history"
+        android:name="com.replica.mtn.app.ui.DepositHistoryFragment"
+        android:label="@string/deposit_history"
+        tools:layout="@layout/diposit_history_fragment" >
+
+        <action
+            android:id="@+id/action_deposit_history_to_sales_report_second"
+            app:destination="@id/sales_report_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sales_report_second"
+        android:name="com.replica.mtn.app.ui.SalesReportSecondFragment"
+        android:label="@string/sales_report"
+        tools:layout="@layout/sales_report_second_fragment" >
+
+        <argument
+            android:name="fromDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="toDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="isFrom"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_sales_report_second_to_sales_report_third"
+            app:destination="@id/sales_report_third" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sales_report_third"
+        android:name="com.replica.mtn.app.ui.SalesReportThirdFragment"
+        android:label="@string/sales_report"
+        tools:layout="@layout/sales_report_third_fragment" >
+
+        <argument
+            android:name="fromDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="toDate"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/transaction_history"
+        android:name="com.replica.mtn.app.ui.TransactionHistoryFragment"
+        android:label="@string/transaction_history"
+        tools:layout="@layout/transaction_history_fragment" >
+        <action
+            android:id="@+id/action_transaction_history_to_transaction_history_second"
+            app:destination="@id/transaction_history_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transaction_history_second"
+        android:name="com.replica.mtn.app.ui.TransactionHistorySecondFragment"
+        android:label="@string/transaction_history"
+        tools:layout="@layout/transaction_history_second_fragment" >
+
+        <argument
+            android:name="fromDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="toDate"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/topUp"
+        android:name="com.replica.mtn.app.ui.TopUpFragment"
+        android:label="@string/topup"
+        tools:layout="@layout/top_up_fragment" />
+    <fragment
+        android:id="@+id/transfer"
+        android:name="com.replica.mtn.app.ui.TransferMiddleFragment"
+        android:label="@string/transfer"
+        tools:layout="@layout/transfer_fragment" />
+
+    <fragment
+        android:id="@+id/purchase"
+        android:name="com.replica.mtn.app.ui.PurchaseFragment"
+        android:label="@string/purchase"
+        tools:layout="@layout/purchase_fragment" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.replica.mtn.app.ui.transfer.TransferFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.replica.mtn.app.ui.data.DataFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

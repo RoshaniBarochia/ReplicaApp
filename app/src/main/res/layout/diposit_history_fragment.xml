@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E7EBE8"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:id="@+id/settingToolbar"
+        android:gravity="center_vertical"
+        android:background="@color/purple_500"
+        android:layout_height="@dimen/_40sdp">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/imgImage"
+            android:src="@drawable/ic_arrow_back_24"
+            app:tint="@color/black"
+            android:padding="@dimen/_5sdp"
+            android:contentDescription="@string/temp_null"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_lite"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/cera_pro_medium"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/deposit_history"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+             />
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/temp_null"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:src="@drawable/diposit_his_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingToolbar" />
+
+
+    <TextView
+        android:id="@+id/selectCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/from_dd_mm_yy"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginTop="@dimen/_35sdp"
+        app:layout_constraintTop_toBottomOf="@id/imgMain"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/tvFromDate"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:fontFamily="@font/cera_pro_medium"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_10ssp"
+        android:drawablePadding="@dimen/_10ssp"
+        android:background="@drawable/selector_button_secondary"
+        app:layout_constraintTop_toBottomOf="@id/selectCnt"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textColor="@color/black"/>
+<TextView
+        android:id="@+id/newPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_dd_mm_yy"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvFromDate"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/tvToDate"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:fontFamily="@font/cera_pro_medium"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_10ssp"
+        android:drawablePadding="@dimen/_10ssp"
+        android:background="@drawable/selector_button_secondary"
+        app:layout_constraintTop_toBottomOf="@id/newPin"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tvGraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plot_graph_on"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvToDate"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/spGraph"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:fontFamily="@font/cera_pro_medium"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_8ssp"
+        android:entries="@array/sales_report"
+        android:drawablePadding="@dimen/_10ssp"
+        android:background="@drawable/selector_button_secondary"
+        app:layout_constraintTop_toBottomOf="@id/tvGraph"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:popupBackground="@color/white"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_60sdp"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/purple_500"
+        app:cornerRadius="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/spGraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

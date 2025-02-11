@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- TODO:
+    <item android:state_enabled="false" android:drawable="@drawable/"/>-->
+    <item android:state_pressed="true" android:drawable="@drawable/gold_light_bg_curve"/>
+    <item android:drawable="@drawable/gold_bg_curve" />
+</selector>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:id="@+id/settingToolbar"
+        android:gravity="center_vertical"
+        android:background="@color/purple_500"
+        android:layout_height="@dimen/_40sdp">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/imgImage"
+            android:src="@drawable/ic_arrow_back_24"
+            app:tint="@color/black"
+            android:padding="@dimen/_5sdp"
+            android:contentDescription="@string/temp_null"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_lite"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/cera_pro_medium"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/incentive_history"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+             />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingToolbar"
+        android:background="#E7EBE8">
+
+    <TextView
+        android:id="@+id/selectCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/distributor_1"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/imgMain"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/black"
+        />
+
+
+
+    <TextView
+        android:id="@+id/newPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msisdn_27640100000"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvFromDate"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textColor="@color/gray_disable_text"
+        />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvZar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_40000000_00_zar"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/mainLayout"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/date_time_16_01_2020_23_30"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvZar"
+        app:layout_constraintStart_toStartOf="@id/tvZar"
+        android:textColor="@color/gray_disable_text"
+        />
+
+    <TextView
+        android:id="@+id/tvRef"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reference_2020011715520496001000080"
+        android:fontFamily="@font/cera_pro_medium"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toStartOf="@id/tvZar"
+        android:textColor="@color/gray_disable_text"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
